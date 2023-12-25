@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-25T01:39:27 IST" name="Suite" finished-at="2023-12-25T01:39:27 IST" duration-ms="135">
+    <groups>
+      <group name="regression">
+        <method signature="BasicPrgm.subtraction()[pri:0, instance:TestNupdates.BasicPrgm@21282ed8]" name="subtraction" class="TestNupdates.BasicPrgm"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="BasicPrgm.mul()[pri:0, instance:TestNupdates.BasicPrgm@21282ed8]" name="mul" class="TestNupdates.BasicPrgm"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-12-25T01:39:27 IST" name="Test" finished-at="2023-12-25T01:39:27 IST" duration-ms="135">
+      <class name="TestNupdates.BasicPrgm">
+        <test-method signature="div()[pri:-1, instance:TestNupdates.BasicPrgm@21282ed8]" started-at="2023-12-25T01:39:27 IST" name="div" finished-at="2023-12-25T01:39:27 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- div -->
+        <test-method signature="mul()[pri:0, instance:TestNupdates.BasicPrgm@21282ed8]" started-at="2023-12-25T01:39:27 IST" name="mul" finished-at="2023-12-25T01:39:27 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mul -->
+        <test-method signature="subtraction()[pri:0, instance:TestNupdates.BasicPrgm@21282ed8]" started-at="2023-12-25T01:39:27 IST" name="subtraction" finished-at="2023-12-25T01:39:27 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method signature="add()[pri:1, instance:TestNupdates.BasicPrgm@21282ed8]" started-at="2023-12-25T01:39:27 IST" name="add" finished-at="2023-12-25T01:39:27 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add -->
+      </class> <!-- TestNupdates.BasicPrgm -->
+      <class name="TestNupdates.DataProviderPrgm">
+        <test-method signature="getData(java.lang.String,java.lang.String)[pri:0, instance:TestNupdates.DataProviderPrgm@5d0a1059]" started-at="2023-12-25T01:39:27 IST" name="getData" data-provider="bms" finished-at="2023-12-25T01:39:27 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mysore]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method signature="getData(java.lang.String,java.lang.String)[pri:0, instance:TestNupdates.DataProviderPrgm@5d0a1059]" started-at="2023-12-25T01:39:27 IST" name="getData" data-provider="bms" finished-at="2023-12-25T01:39:27 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QSP]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TYSS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+      </class> <!-- TestNupdates.DataProviderPrgm -->
+      <class name="TestNupdates.DependsOnMethodPrgm">
+        <test-method signature="hi()[pri:0, instance:TestNupdates.DependsOnMethodPrgm@1e1a0406]" started-at="2023-12-25T01:39:27 IST" name="hi" finished-at="2023-12-25T01:39:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hi -->
+        <test-method signature="hello()[pri:0, instance:TestNupdates.DependsOnMethodPrgm@1e1a0406]" started-at="2023-12-25T01:39:27 IST" name="hello" finished-at="2023-12-25T01:39:27 IST" depends-on-methods="TestNupdates.DependsOnMethodPrgm.hi" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hello -->
+        <test-method signature="good()[pri:0, instance:TestNupdates.DependsOnMethodPrgm@1e1a0406]" started-at="2023-12-25T01:39:27 IST" name="good" finished-at="2023-12-25T01:39:27 IST" depends-on-methods="TestNupdates.DependsOnMethodPrgm.hello" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- good -->
+        <test-method signature="bye()[pri:0, instance:TestNupdates.DependsOnMethodPrgm@1e1a0406]" started-at="2023-12-25T01:39:27 IST" name="bye" finished-at="2023-12-25T01:39:27 IST" depends-on-methods="TestNupdates.DependsOnMethodPrgm.good" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bye -->
+        <test-method signature="seeyou()[pri:0, instance:TestNupdates.DependsOnMethodPrgm@1e1a0406]" started-at="2023-12-25T01:39:27 IST" name="seeyou" finished-at="2023-12-25T01:39:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seeyou -->
+        <test-method signature="seeyou()[pri:0, instance:TestNupdates.DependsOnMethodPrgm@1e1a0406]" started-at="2023-12-25T01:39:27 IST" name="seeyou" finished-at="2023-12-25T01:39:27 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seeyou -->
+        <test-method signature="seeyou()[pri:0, instance:TestNupdates.DependsOnMethodPrgm@1e1a0406]" started-at="2023-12-25T01:39:27 IST" name="seeyou" finished-at="2023-12-25T01:39:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seeyou -->
+        <test-method signature="seeyou()[pri:0, instance:TestNupdates.DependsOnMethodPrgm@1e1a0406]" started-at="2023-12-25T01:39:27 IST" name="seeyou" finished-at="2023-12-25T01:39:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seeyou -->
+      </class> <!-- TestNupdates.DependsOnMethodPrgm -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

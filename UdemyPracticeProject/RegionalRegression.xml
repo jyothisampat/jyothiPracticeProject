@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Suite">
+  <test thread-count="3" name="Test">
+    <classes>
+      <class name="TestNupdates.DataProviderPrgm">
+		  <methods>
+			  <include name="getData"></include>
+			  <include name="bms"></include>
+		  </methods>
+      </class>
+      
+      <class name="TestNupdates.BasicPrgm">
+      <methods>
+		  <include name="add"></include>
+		  <include name="div"></include>
+		  <exclude name="subtraction"></exclude>
+	  </methods>
+      </class>
+      <class name="TestNupdates.DependsOnMethodPrgm">
+		  <methods>
+			  <include name="hi"></include>
+			  <include name="hello"></include>
+			  <include name="good"></include>
+		  </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
